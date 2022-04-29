@@ -19,11 +19,14 @@ function displayInOut2(){
 }
 function displayInOut3(){
     var vid = document.getElementById("vids3");
-    if (vid.style.display == "none") {
-        vid.style.display = "grid";
+    if (vid.classList[0] == 'hidden') {
+        vid.classList.add('videogrids');
+        vid.classList.remove("hidden");
        pageScroll();
        return
-    } return vid.style.display = "none";
+    }vid.classList.remove("videogrids");
+    vid.classList.add("hidden")
+    return;
 }
 
 
