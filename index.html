@@ -20,9 +20,7 @@
                 </div>
                 <div class = 'right-div'>
                     <a class = 'active' href ='./index.html'>Inicio</a>
-                    <a href = './galeria.html'>Galeria</a>
-                    <a href = './Projetos'>Projetos</a>    
-                    <a href = './contato.html'>Contato</a>
+                    <a onclick = "scrollEnd()" style = "cursor: pointer;">Contato</a>
                 </div>
             </div>
         </header>
@@ -49,12 +47,12 @@
                 Pastas de Projetos
             </a>
         </div>
-        <div class = 'lista-projetos'>
+        <div class = 'lista-projetos' id="flavoursContainer" onload="scrollplease()">
             <div class = 'projeto1'>
                 <a>
                     Edição de videos Youtube
                 </a>
-                <a href = './Projetos/projeto1.html'>
+                <a onclick="displayInOut1()" style="cursor: pointer">
                     <img class = 'img0' src = './images/projeto1.jpg' alt = 'projeto1'>
                 </a>
             </div>
@@ -62,15 +60,15 @@
                 <a>
                     Edição de videos Instagram
                 </a>
-                <a href = './Projetos/projeto1.html'>
-                    <img class = 'img0' src = './images/projeto2.jpg' alt = 'projeto1'>
+                <a>
+                    <img class = 'img0' src = './images/projeto2.jpg' alt = 'projeto1' onclick="">
                 </a>
             </div>
             <div class = 'projeto3'>
                 <a>
                     Edição de videos para Youtube
                 </a>
-                <a href = './Projetos/projeto1.html'>
+                <a>
                     <img class = 'img0' src = './images/projeto3.jpg' alt = 'projeto1'>
                 </a>
             </div>
@@ -78,7 +76,7 @@
                 <a>
                     Transmissões ao vivo e edição para Instagram
                 </a>
-                <a href = './Projetos/projeto1.html'>
+                <a>
                     <img class = 'img0' src = './images/projeto4.jpg' alt = 'projeto1'>
                 </a>
             </div>
@@ -86,11 +84,74 @@
                 <a>
                     Projetos pessoais
                 </a>
-                <a href = './Projetos/projeto1.html'>
+                <a onclick="displayvids4()" style="cursor: pointer">
                     <img class = 'img0' src = './images/projeto5.jpg' alt = 'projeto1'>
                 </a>
             </div>
         </div>
-    </div>
+        <div id = 'vids1'class = 'project-vids' style = "display:none">
+            <div class = 'video-image1'>
+                <a>
+                    <h1 style ="display:block; text-align: center;">
+                        intro para youtube
+                    </h1>
+                </a>
+                <br>
+                <a>
+                    <iframe width="320" height="280"
+                        src="https://www.youtube.com/embed/TOBAeEztxf8">
+                    </iframe>
+                </a>
+            </div>
+
+        </div>
+        <div class = transition>
+            .<br>
+        </div >
+        <div class = 'title2'>
+            <a>
+                Fale comigo!
+            </a>
+        </div>
+        <div class = 'footer'>
+            <div>
+                <a href="https://www.facebook.com/suganuu/" target="_blank" >
+                    <img class = 'midia-social' src = './images/facebook.png' alt = 'facebook'><a>
+                    </a>
+                </a>
+            </div>
+            <div>
+                <a  href="https://www.instagram.com/suganu__/" target="_blank"  >
+                    <img class = 'midia-social' src = './images/instagram.png' alt = 'instagram'>
+                </a>
+            </div>
+            <div>
+                <a href ="https://www.youtube.com/channel/UCH_PayNBE0zmhtVAljkY8xg/videos" target="_blank" >
+                    <img class = 'midia-social' src = './images/youtube.png' alt = 'youtube'>
+                </a>
+            </div>
+            <div>
+                <a href = "https://www.tiktok.com/@suganu" target="_blank" >
+                    <img class = 'midia-social' src = './images/tiktok.png' alt = 'tiktok'>
+                </a>
+            </div>
+            <div>
+                <a href = "https://www.linkedin.com/in/guilherme-sugano-8b2457187/" target="_blank" >
+                    <img class = 'midia-social' src = './images/linkedin.png' alt = 'linkedin'>
+                </a>
+            </div>
+            <div>
+                <a href = "https://letterboxd.com/suganu/" target="_blank" >
+                    <img class = 'midia-social' src = './images/letterbox.png' alt = 'letterboxd'>
+                </a>
+            </div>
+        </div>
+        <div class = 'lastdiv'>
+            <a href = "https://allmylinks.com/link/out?id=199hiv7-qqd7-17igrzm" target="_blank" >
+                <p>
+                    Me envie um email: gui_sugano@hotmail.com
+                </p>
+            </a>
+        </div>
 </body>
 </html>

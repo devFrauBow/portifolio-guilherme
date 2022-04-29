@@ -122,6 +122,7 @@ h1{
     color: #ffffff;
     font-weight: bolded;
     padding:20px;
+    
 }
 .me-home{
     background: url(./images/fundo3d.jpg);
@@ -153,13 +154,13 @@ h1{
 .project-header{
     color: #ffffff;
     font-size: 30px;
-    margin-top: 20px    ;
+    margin-top: 20px;
     padding: 0;
     text-align: center;
 }
 .lista-projetos {
     display:flex;
-    overflow: scroll;
+    overflow-x: scroll;
     padding: 10px;
     margin: 0;
     align-items: center;
@@ -175,4 +176,58 @@ h1{
     width: 320px;
     transition: all 0.5s ease-in-out;
     color: #ffffff;
+}
+.project-vids{
+    display:none;
+    align-items: center;
+}
+.video-image1{
+    display:grid;
+    padding: 10px;
+    margin-left: 30%;
+    align-items: center;
+    text-align: center;
+}
+.midia-social{  
+    width: 50px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 5px;  
+}
+.footer{
+    padding:5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(0, 0, 0);
+    padding-left: 10%;
+    align-items: center;
+}
+.lastdiv a{
+    color:#ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.lastdiv p {
+    border: 1px solid #00e1ff;
+}
+.lastdiv{
+    text-align: center;
+    padding:20px;
+}
+
+.title2{
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+@media screen and (max-width: 500px){
+    .video-image1{
+        margin-left: 20px;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 20%;
+    }
+
 }
