@@ -1,22 +1,26 @@
 function displayInOut1(){
     var vid = document.getElementById("vids1");
-    console.log(vid)
-    if (vid.style.display == "none") {
-        vid.style.display = "flex";
+    if (vid.classList[0] == 'hidden') {
+        vid.classList.add('videoflex');
+        vid.classList.remove("hidden");
        pageScroll();
        return
-    } return vid.style.display = "none";
+    }vid.classList.remove("videoflex");
+    vid.classList.add("hidden")
+    return;
 }
-
 function displayInOut2(){
     var vid = document.getElementById("vids2");
-    console.log(vid)
-    if (vid.style.display == "none") {
-        vid.style.display = "flex";
+    if (vid.classList[0] == 'hidden') {
+        vid.classList.add('videoflex');
+        vid.classList.remove("hidden");
        pageScroll();
        return
-    } return vid.style.display = "none";
+    }vid.classList.remove("videoflex");
+    vid.classList.add("hidden")
+    return;
 }
+
 function displayInOut3(){
     var vid = document.getElementById("vids3");
     if (vid.classList[0] == 'hidden') {
@@ -28,8 +32,6 @@ function displayInOut3(){
     vid.classList.add("hidden")
     return;
 }
-
-
 
 
 
