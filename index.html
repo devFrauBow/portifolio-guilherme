@@ -6,16 +6,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Gui's portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header>
+        <header class = 'fking-header'>
             <div class = 'header-div'>
                 <div class = 'name'>
-                    <a>Guilherme de Souza Sugano</a>
+                    <a>
+                        <p class = pcP>
+                            Guilherme de Souza Sugano
+                        </p>
+                        <p class = mobileP>
+                            Guilherme
+                        </p>
+                    </a>
                 </div>
                 <div class = 'right-div'>
                     <a onclick = "scrollEnd()" style = "cursor: pointer;">Contato</a>
@@ -24,194 +31,211 @@
         </header>
         <div class = 'about-me-div'>
             <div class = 'title'>
-                <h1>
-                    Quem sou eu?
-                </h1>
+                <h3>
+                    Sobre mim
+                </h3>
             </div>
                 <div class = 'thephoto'>
                     <img class = 'foto' src = './images/610ddf655091773.620c26e5cb86c.jpg' alt = 'foto'>
-                    <a class = 'about-me-text'>
-                        Meu nome é Guilherme de Souza Sugano, tenho 19 anos sou formado em técnico em manutenção e suporte de informática. Gosto de tecnologia, faço filmagem e edição de videos, sou completamente apaixonado por cinema e tento ser músico quando da tempo
+                </div>
+                <div class = 'about-me-text-div'>
+                    <a class = 'about-me-text' >
+                        Olá, meu nome é Guilherme de Souza Sugano, tenho 18 anos sou formado em tecnico de manutenção e suporte de informatica, sou videomaker, músico e também faço filmagem e edição de videos.
                     </a>
                 </div>
         </div>
-    <div class = transition>
-        .<br>
-    </div>
     <div class = 'div-projetos'>
         <div class = 'project-header'>
             <a>
-                Pastas de Projetos
+                <h3>
+                    Projetos
+                </h3>
             </a>
+            <div class = mobileViewHelper style = "font-size: 12px; padding-top: 12px;">
+                clique para abrir/fechar a galeria
+            </div>
         </div>
-        <div class = 'lista-projetos' id="flavoursContainer" onload="scrollplease()">
+        <div class = 'lista-projetos'onload="scrollplease()">
             <div class = 'projeto1'>
+                <div>
                 <a>
                     Edição de videos Youtube
                 </a>
+                </div>
+                <div class = 'items-projeto1'>
                 <a onclick="displayInOut1()" style="cursor: pointer">
                     <img class = 'img0' src = './images/projeto1.jpg' alt = 'projeto1'>
                 </a>
+                <div id = 'vids1'class = 'hidden'>
+                    <div>
+                        <a>
+                                Intro para canal
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="320" height="280"
+                                src="https://www.youtube.com/embed/TOBAeEztxf8">
+                            </iframe>
+                        </a>
+                    </div>
+                </div>
+                </div>
             </div>
+
             <div class = 'projeto2'>
+                <div>
                 <a>
                     Edição de videos Instagram
                 </a>
+                </div>
+                <div class = items-projeto1>
                 <a onclick ="displayInOut2()" style="cursor: pointer;">
                     <img class = 'img0' src = './images/projeto2.jpg' alt = 'projeto1'>
                 </a>
+                <div id = 'vids2' class = 'hidden'>
+                    <div>
+                        <a>
+                                Trailer de canal
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://www.youtube.com/embed/JnAL2MQntms">
+                            </iframe>
+                        </a>
+                    </div>
+                </div>
+                </div>
             </div>
             <div class = 'projeto3'>
+                <div>
                 <a>
                     Edição de videos para Youtube
                 </a>
+                </div>
+                <div>
                 <a onclick ="displayInOut3()" style="cursor: pointer;">
                     <img class = 'img0' src = './images/projeto3.jpg' alt = 'projeto1'>
                 </a>
+                </div>
+                <div id = 'vids3' class = 'hidden'>
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/o_HskUJeeag">
+                            </iframe>
+                        </a>
+                        <p>
+                            >>>>>>>>
+                             </p>
+                    </div>  
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/9YdDWIZ9D_8">
+                            </iframe>
+                        </a>
+                    </div>  
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/L7GkxPmBukg">
+                            </iframe>
+                        </a>
+                    </div>  
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/bxhtZT6nYKQ">
+                            </iframe>
+                        </a>
+                    </div>  
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/fDqId6BrJNw">
+                            </iframe>
+                        </a>
+                    </div>  
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/7rUHCxlIfg4">
+                            </iframe>
+                        </a>
+                    </div>  
+                    <div class = 'separador'>
+                        <a style="color:black">
+                                separador do meio
+                        </a>
+                        <br>
+                        <a>
+                        </a>
+                    </div>
+                    <div class = 'video00'>
+                        <a>
+                                Edição youtube
+                        </a>
+                        <br>
+                        <a>
+                            <iframe width="360" height="280"
+                                src="https://youtube.com/embed/kFxBUwi9egA">
+                            </iframe>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class = 'projeto4'>
+                <div>
                 <a>
                     Transmissões ao vivo e edição para Instagram
                 </a>
+                </div>
+                <div>
                 <a onclick ="displayInOut4()" style="cursor: pointer;">
                     <img class = 'img0' src = './images/projeto4.jpg' alt = 'projeto1'>
                 </a>
+                </div>
             </div>
             <div class = 'projeto4'>
+                <div>
                 <a>
                     Projetos pessoais
                 </a>
+                </div>
+                <div>
                 <a onclick ="displayInOut5()" style="cursor: pointer;">
                     <img class = 'img0' src = './images/projeto5.jpg' alt = 'projeto1'>
                 </a>
+                </div>
             </div>
         </div>
-        <div class = mobileViewHelper>
-            clique para abrir/fechar a galeria
-        </div>
-        <div id = 'vids1'class = 'project-vids' style = "display:none">
-            <div class = 'video-image1' >
-                <a>
-                        Intro para canal
-                </a>
-                <br>
-                <a>
-                    <iframe width="320" height="280"
-                        src="https://www.youtube.com/embed/TOBAeEztxf8">
-                    </iframe>
-                </a>
-            </div>
-
-        </div>
-        <div id = 'vids2' style = "display:none; font-size: 30px;">
-            <div class = 'video001' style = "display:block;">
-                <a>
-                        Trailer de canal
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://www.youtube.com/embed/JnAL2MQntms">
-                    </iframe>
-                </a>
-            </div>
-        </div>
-        <div class = 'hidden' id = 'vids3'>
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/o_HskUJeeag">
-                    </iframe>
-                </a>
-            </div>  
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/9YdDWIZ9D_8">
-                    </iframe>
-                </a>
-            </div>  
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/L7GkxPmBukg">
-                    </iframe>
-                </a>
-            </div>  
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/bxhtZT6nYKQ">
-                    </iframe>
-                </a>
-            </div>  
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/fDqId6BrJNw">
-                    </iframe>
-                </a>
-            </div>  
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/7rUHCxlIfg4">
-                    </iframe>
-                </a>
-            </div>  
-            <div class = 'separador'>
-                <a style="color:black">
-                        separador do meio
-                </a>
-                <br>
-                <a>
-                </a>
-            </div>
-            <div class = 'video00'>
-                <a>
-                        Edição youtube
-                </a>
-                <br>
-                <a>
-                    <iframe width="360" height="280"
-                        src="https://youtube.com/embed/kFxBUwi9egA">
-                    </iframe>
-                </a>
-            </div>
-        </div>
-        <div class = mobileViewHelper id = Edição youtube">
-            arrasta pro lado ai que tem mais! (ou não) ---->
-        </div>
-        <div class = pcViewHelper id = Edição youtube>
-            arrasta pro lado ai que tem mais! (ou não) ---->
-        </div>
-        <div class = transition>
-            .<br>
-        </div >
+    </div>
+    <div class = "last-div">
         <div class = 'title2'>
             <a>
                 Fale comigo!
@@ -250,12 +274,13 @@
                 </a>
             </div>
         </div>
-        <div class = 'lastdiv'>
-            <a href = "https://allmylinks.com/link/out?id=199hiv7-qqd7-17igrzm" target="_blank" >
-                <p>
-                    Me envie um email: gui_sugano@hotmail.com
-                </p>
-            </a>
-        </div>
+            <div class = 'lastdiv'>
+                <a href = "https://allmylinks.com/link/out?id=199hiv7-qqd7-17igrzm" target="_blank" >
+                    <p>
+                        Me envie um email: gui_sugano@hotmail.com
+                    </p>
+                </a>
+            </div>
+    </div>
 </body>
 </html>
