@@ -342,6 +342,10 @@ h1{
     .hidden{
         display:hidden;
     }
+    .items-projeto1{
+        display: block;
+        margin: 1vh;
+    }
 }
 .displaygrid{
     display:grid;
