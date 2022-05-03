@@ -153,8 +153,6 @@ h1{
         height: 95vh;
         margin: 0;
         background: url("./images/ezgif-1-011a1e2849.gif") 100% 0 no-repeat;
-        background-color: rgba(255, 255, 255, .15);  
-        backdrop-filter: blur(5px);
         
     }
 }
